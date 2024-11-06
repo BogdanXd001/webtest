@@ -1,0 +1,450 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 18px; /* Larger base font size */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+
+}
+.section {
+    min-height: 100vh; /* Ensures the section is at least full screen height */
+    background-size: cover; /* Makes the background image cover the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling of the background image */
+}
+
+/* First section */
+.section1 {
+    background-image: url('background1.png'); /* Replace with your first image path */
+    position: relative;
+    
+}
+.Gif1 img {
+    position: absolute;
+    top: 150px; /* Adjust as needed to place below the navbar */
+    left: 50px; /* Adjust to desired position */
+    max-width: 500px; /* Limit width of GIF */
+    z-index: 1; /* Ensures it sits on the correct layer */*/
+}
+.PoweredBy {
+    font-size: 25px;
+    text-shadow: 2px 2px 0 white,  /* White shadow to the right-bottom */
+    -2px -2px 0 white, /* White shadow to the left-top */
+    -2px 2px 0 white,  /* White shadow to the left-bottom */
+    2px -2px 0 white;  /* White shadow to the right-top */;
+}
+/* Second section */
+.section2 {
+    background-image: url("background2.png");
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full screen height */
+    flex-direction: column;  /* Stack the content vertically */
+  }
+
+  /* Style for the container inside the section */
+  .Available {
+    text-align: center;
+    font-size: 25px
+    
+  }
+
+  /* Resize the image */
+  .Available img {
+    width: 280px;  /* Set desired width */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%;  /* Ensure it fits smaller screens */
+    margin-top: 10px; /* Optional space between text and image */
+  }
+
+/* Third section */
+.section3 {
+    background-image: url('background3.png'); /* Replace with your third image path */
+    padding-bottom: 100px;
+}
+
+.BioPePo h1 {
+    text-align: center;
+    color: black; /* Optional: keep the color consistent */
+    margin-bottom: 20px; /* Add some space below the heading */
+    font-size: 60px;
+}
+
+/* Adjust layout for larger screens */
+.bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px; /* Space between text and image */
+    margin-left: 50px;
+    font-size:30px; 
+    
+}
+
+.biop {
+    flex: 1;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 0 white,  /* White shadow to the right-bottom */
+    -2px -2px 0 white, /* White shadow to the left-top */
+    -2px 2px 0 white,  /* White shadow to the left-bottom */
+    2px -2px 0 white;  /* White shadow to the right-top */;
+}
+
+.bio-image {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.slider {
+    position: relative;
+    max-width: 50%;
+    flex: 1;
+    overflow: hidden;
+    margin-left: 150px;
+    z-index: 3;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Transition for sliding effect */
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+    transition: opacity 1s ease-in-out; /* Optional: fade effect */
+}
+
+.section4 {
+    background-image: url(background4.png);
+    height: 100vh;
+}
+.navbar {
+    background-color: #00a1e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 50px; /* Larger logo */
+    height: 50px; /* Explicit height */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Adjusted font size for navbar items */
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #a1e0b0;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    flex-shrink: 0; /* Prevent icons from shrinking */
+}
+
+.social-icons img {
+    width: 40px; /* Larger social icons */
+    height: 40px; /* Set explicit height */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Hover effect */
+}
+.presale-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; /* Decreased padding for a smaller look */
+    background-color: #dc602b;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adjusted shadow for a softer effect */
+    width: 90%; /* Keep responsive */
+    max-width: 400px; /* Decreased max-width to fit your design */
+    margin: 50px auto; /* Center it */
+    position: relative;
+    left: 40%;
+    transform: translateX(-40%);
+    z-index: 2;
+}
+
+.presale-title {
+    margin-bottom: 10px; /* Decrease this value to reduce the gap */
+    font-size: 24px; /* Adjust size as needed */
+    color: #fff; /* Change color if necessary */
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Reduced padding for smaller input boxes */
+    font-size: 12px; /* Smaller font size for inputs */
+    margin: 5px 0; /* Reduced margin for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Reduced border radius */
+}
+
+button {
+    font-size: 18px; /* Match button size to the container */
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.timer {
+    display: flex;
+    flex-direction: row; /* Keep time groups in a row for desktop */
+    justify-content: center;
+    gap: 30px; /* Space between the time groups */
+    margin: 20px 0; /* Space above and below */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.time-group {
+    display: flex;
+    flex-direction: row; /* Arrange time sections horizontally */
+    justify-content: center;
+    gap: 20px; /* Space between each time section */
+}
+
+.time-section {
+    border: 2px solid #00a1e0;
+    border-radius: 10px;
+    padding: 10px; /* Increased padding for a larger box */
+    background-color: #f8f8f8;
+    text-align: center;
+    width: 50px; /* Increased width for more space */
+}
+
+.time {
+    font-size: 36px; /* Increased font size for better visibility */
+    font-weight: bold;
+    color: #ff5722;
+}
+.label {
+    display: block; /* Keeps the label below the number */
+    font-size: 14px; /* Increased label font size */
+    color: #666;
+    margin-top: 5px; /* Adds space between the number and label */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.imgg1 {
+    flex: 1;
+    max-width: 50%; /* Half width for desktop */
+    z-index: 3;
+}
+.section5 {
+    background-image: url('background5.png');
+    z-index: -2;
+}
+
+/* Bridge images styling for row and stacking */
+.bridge-images {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.bridge-images img:nth-child(1) {
+    margin-top: -30px; /* Move the first image a bit higher */
+}
+
+.bridge-images img:nth-child(2) {
+    margin-top: 30px; /* Move the second image a bit lower */
+}
+
+.bridge-images img:nth-child(3) {
+    margin-top: -30px; /* Move the third image a bit higher */
+}
+
+.bridge-images img:nth-child(4) {
+    margin-top: 30px; /* Move the fourth image a bit lower */
+}
+.section4 .Bridge h1{
+    text-align: center;
+    padding-top: 300px;
+}
+
+.bridge-images img {
+    width: 300px;
+    max-width: 500px; /* Limit width of each image */
+}
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+
+    body {
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    }
+
+    .presale-container {
+        width: 90%; /* Responsive width */
+        max-width: none; /* Remove max-width to let it use full width on mobile */
+        left: auto; /* Reset left positioning */
+        transform: none; /* Remove translation */
+        margin: 20px auto; /* Center it with margin adjustments */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+    .mobile-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #00a1e0;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .social-icons {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .presale-container {
+        width: 90%; /* More responsive width on mobile */
+        padding: 15px;
+    }
+    .timer {
+        flex-direction: column; /* Stack the time sections vertically */
+        gap: 20px; /* Smaller gap for mobile */
+    }
+
+    .time-section {
+        width: 60px; /* Adjusted width for mobile */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .time {
+        font-size: 24px; /* Smaller font for numbers on mobile */
+    }
+
+    .label {
+        font-size: 12px; /* Adjusted label size for mobile */
+        margin-top: 3px;
+    }
+
+    .section2 {
+        height: auto;  /* Allow section to adjust height on smaller screens */
+   
+    }
+    .imgg1{
+        display: none;
+    }
+    .bio-content {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items */
+        text-align: center; /* Center-align the text */
+    }
+
+    .biop {
+        margin-top: 20px; /* Center text on mobile */
+    }
+
+    .bio-image {
+        margin-right: 100px;
+        margin-top: -150px;
+        width: 300px; /* Responsive width for mobile */
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column; /* Ensure vertical stacking */
+    }
+
+    .Gif1 img {
+        position: static; /* Reset positioning */
+        max-width: 100%; /* Ensure image scales down */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .Available img {
+        width: 180px;  /* Set desired width */
+        height: auto;  /* Maintain aspect ratio */
+        max-width: 100%;  /* Ensure it fits smaller screens */
+        margin-top: 10px; /* Optional space between text and image */
+    }
+      .slider {
+        width: 90%; /* Increase the width for a larger slider */
+        margin: 0 auto; /* Center the slider */
+        min-width: 100%;
+        
+    }  
+      .flex-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */  
+    }
+    .bridge-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bridge-images img {
+        max-width: 100%; /* Full width for mobile */
+    }
+}

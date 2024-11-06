@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popo Token</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     
+</head>
+<body>
+    <div class="section section1">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="pepelogo.png" alt="Popo Logo">
+            <h3>Pepo</h3>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#PePoBio">Who Is Popo?</a></li>
+            <li><a href="#">How To Use Bridge</a></li>
+            <li><a href="#">Tokenomics</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><img src="x-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="telegram-icon.png" alt="Telegram"></a>
+            <a href="#"><img src="InstagramIcon.png" alt="Instagram"></a>
+        </div>
+    </nav>
+    <div class="flex-container">
+    <div class="Gif1">
+        <img src="pozamobil.png" alt="Animated GIF">
+    </div>
+    <div class="presale-container">
+            <h3 class="presale-title">$FROP Token</h3>
+            <div class="timer" id="countdown-timer">
+                <div class="time-group">
+                    <div class="time-section">
+                        <span class="time" id="days">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-section">
+                        <span class="time" id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                </div>
+                <div class="time-group">
+                    <div class="time-section">
+                        <span class="time" id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-section">
+                        <span class="time" id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-selection">
+                <label for="currency">Choose a cryptocurrency:</label>
+                <select id="currency" class="dropdown">
+                    <option value="usdt">USDT</option>
+                    <option value="eth">ETH</option>
+                </select>
+            </div>
+            <input type="number" id="usdt-amount" placeholder="Enter amount in USDT" min="0" />
+            <input type="text" id="token-amount" placeholder="Equivalent tokens" disabled />
+            <button id="connect-wallet" class="connect-wallet">Connect Wallet</button>
+            <button id="buy-tokens" class="buy-tokens" style="display: none;">Buy Tokens</button>
+    </div>    
+    </div>
+    </div>
+    <div class="section section2" alt="PoweredByCont">
+       <div class="Available">
+        <h1><b>AVALIABLE ON</b></h1>
+        <img src="MEXC.png">
+        <img src="Raydium.png">
+        <img src="Panckake.png">
+       </div>
+       
+        <div class="PoweredBy">
+            <h1>POWERED BY</h1>
+            <img src="" alt="PinkSale" >
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="BioPePo" id="PePoBio">
+            <h1>Who is PEPO?</h1>
+            <div class="bio-content">
+                <p class="biop">Pepo: From Launch to Legend" chronicles Pepo's journey from digital debut to meme icon. With secure tokens, a lively community, and savvy marketing strategies, Pepo aspires to outshine Pepe and conquer the meme landscape.</p>
+                <img src="BOX1.png  " alt="Pepo Image" class="bio-image">
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="imgg1">
+                <img src="pozamobil.png" alt="Animated GIF">
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="Multichain.png" alt="Image 1">
+                    <img class="slide" src="Staking.png" alt="Image 2">
+                    <img class="slide" src="Community.png" alt="Image 3">
+                    <img class="slide" src="Boogeyman.png" alt="Image 4">
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    let currentIndex = 0;
+                    const slides = document.querySelectorAll('.slide');
+                    const totalSlides = slides.length;
+        
+                    function showSlide(index) {
+                        const slidesContainer = document.querySelector('.slides');
+                        slidesContainer.style.transform = `translateX(-${index * 100}%)`; // Slide to the current index
+                    }
+        
+                    function nextSlide() {
+                        currentIndex = (currentIndex + 1) % totalSlides; // Move to the next slide
+                        showSlide(currentIndex);
+                    }
+        
+                    // Initialize the slider
+                    showSlide(currentIndex);
+                    setInterval(nextSlide, 4000); // Change image every 3 seconds
+                });
+            </script>
+            </div>
+        </div>
+    
+    </div>
+    <div class="section section4">
+        <div class="Bridge">
+            <h1>HOW TO USE BRIDGE</h1>
+            <div class="bridge-images">
+                <img src="br1.png" alt="Bridge Image 1">
+                <img src="br2.png" alt="Bridge Image 2">
+                <img src="br3.png" alt="Bridge Image 3">
+                <img src="br4.png" alt="Bridge Image 4">
+            </div>
+        </div>
+    </div>
+    <div class="section section5">
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
